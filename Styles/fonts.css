@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+/*  */
+
+/* Montserrat for headings */
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-semiBold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-light-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-regular-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-bold-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-black-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Roboto Condensed for body text */
+.roboto-condensed-light {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-condensed-regular {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-condensed-medium {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-condensed-semibold {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.roboto-condensed-bold {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

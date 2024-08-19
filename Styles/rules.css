@@ -1,0 +1,210 @@
+/* Base Styles */
+/* ================================================================
+   Define base typography, colors, and global element styles.
+   ================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", serif;
+  color: var(--clr--text-bl-500);
+}
+
+img {
+  display: block;
+  width: auto;
+}
+
+nav {
+  list-style: none;
+}
+
+a {
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover,
+.custom_hover:hover {
+  transform: scale(1.1);
+}
+
+/* REMOVING STRONG ELEM. SPACING */
+strong {
+  font-weight: 500;
+  font-family: "Montserrat", serif;
+  color: var(--clr--accent-900) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ================================================================
+      GLOBAL CLASSES
+   ================================================================= */
+
+/* DESKTOP ONLY AND MOBILE ONLY RULES */
+@media only screen and (min-width: 1025px) {
+  .mobile_only {
+    visibility: 0;
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  .desktop_only {
+    visibility: 0;
+    display: none !important;
+  }
+}
+
+/* Base Styles FOR COLORS */
+/* ================================================================
+       
+       ================================================================= */
+:root {
+  /* TEXT COLORS BLACK*/
+  --clr--text-bl-900: #292727;
+  --clr--text-bl-800: #252323;
+  --clr--text-bl-700: #211f1f;
+  --clr--text-bl-600: #1d1b1b;
+  --clr--text-bl-500: #191717;
+  --clr--text-bl-400: #151414;
+  /* TEXT COLORS WHITE*/
+  --clr--text-wh-900: #faf9f9;
+  --clr--text-wh-800: #fbfafa;
+  --clr--text-wh-700: #fbfafa;
+  --clr--text-wh-600: #fcfbfb;
+  --clr--text-wh-500: #fcfbfb;
+  --clr--text-wh-400: #e4e0e0;
+  /* BACKGROUND COLORS */
+  --clr--bg-900: #faf9f9;
+  --clr--bg-800: #fbfafa;
+  --clr--bg-700: #fbfafa;
+  --clr--bg-600: #fcfbfb;
+  --clr--bg-500: #fcfbfb;
+  --clr--bg-400: #c9c9c9;
+  /* PRIMARY COLORS */
+  --clr--primary-900: #236e8f;
+  --clr--primary-800: #206381;
+  --clr--primary-700: #1c5872;
+  --clr--primary-600: #194d64;
+  --clr--primary-500: #154256;
+  --clr--primary-400: #123748;
+  /* SECONDARY COLORS */
+  --clr--secondary-900: #42a8c7;
+  --clr--secondary-800: #3b97b3;
+  --clr--secondary-700: #35869f;
+  --clr--secondary-600: #2e768b;
+  --clr--secondary-500: #286577;
+  --clr--secondary-400: #215464;
+  /* ACCENT COLORS */
+  --clr--accent-900: #d16140;
+  --clr--accent-800: #bc573a;
+  --clr--accent-700: #a74e33;
+  --clr--accent-600: #92442d;
+  --clr--accent-500: #7d3a26;
+  --clr--accent-400: #693120;
+
+  /* CUSTOM VAR COLOR OPACITY */
+  --clr--opa-primary-600: rgb(25, 77, 100, 0.8);
+  --clr--opa-primary-700: rgb(53, 134, 159, 0.8);
+  --clr--opa-secondary-900: rgb(66, 168, 199, 0.2);
+  --clr--opa-bg-600: rgb(253, 253, 253, 0.8);
+  --clr--opa-bg-500: rgb(253, 253, 253, 0.8);
+
+  /* Base Styles FOR TEXT SIZES */
+  /* ================================================================
+       
+       ================================================================= */
+
+  --fs-h1: 5.625rem;
+  --fs-h2: 3.125rem;
+  --fs-h3: 2.5rem;
+  --fs-h4: 2.188rem;
+  --fs-h5: 1.875rem;
+  --fs-p: 1.875rem;
+}
+
+/* @media only screen and (max-width: 800px) {
+  :root {
+    --fs-h1: 7.3125rem;
+    --fs-h2: 4.0625rem;
+    --fs-h3: 3.25rem;
+    --fs-h4: 2.8424rem;
+    --fs-h5: 2.4375rem;
+    --fs-p: 2.4375rem;
+  }
+} */
+@media only screen and (max-width: 600px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 3.9rem;
+    --fs-h3: 3.1rem;
+    --fs-h4: 2.5rem;
+    --fs-h5: 2.3rem;
+    --fs-p: 2.1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  :root {
+    --fs-h1: 3.65625rem;
+    --fs-h2: 2.03125rem;
+    --fs-h3: 1.625rem;
+    --fs-h4: 1.4212rem;
+    --fs-h5: 1.21875rem;
+    --fs-p: 1.21875rem;
+  }
+  h1 {
+    margin-bottom: -0.2rem !important;
+  }
+}
+
+/* Base Styles FOR HEADINGS */
+/* ================================================================
+       
+       ================================================================= */
+h1 {
+  font-size: var(--fs-h1);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: -1rem;
+}
+h2 {
+  font-size: var(--fs-h2);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600 !important;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: var(--fs-p);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
